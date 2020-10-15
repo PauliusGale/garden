@@ -1,0 +1,155 @@
+<html>
+  <head>
+   <title>Your interface</title>
+   <meta charset="UTF-8">
+   <meta name="keywords" content="HTML">
+   <meta name="description" content="Sodas">
+   <meta name="author" content="Grigalavicius">
+   <link type="text/css" rel="stylesheet" href="main.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  </head>
+  <body>
+   <div class="container">
+     <div class="name">
+       <h1>  Garden interface </h1>
+    </div>
+    <section class="weather">
+      <h2 class="hweather"> Weather </h2>
+      <div class="weathertable">
+      <table>
+        <tr>
+          <th colspan="3">2019-12-16</th>
+          <th colspan="3">2019-12-17</th>
+          <th colspan="3">2019-12-18</th>
+        <tr class="table-time">
+          <td> 8:00 </td>
+          <td> 16:00 </td>
+          <td> 0:00 </td>
+          <td> 8:00 </td>
+          <td> 16:00 </td>
+          <td> 0:00 </td>
+          <td> 8:00 </td>
+          <td> 16:00 </td>
+          <td> 0:00 </td>
+        </tr>
+        <tr class="table-degrees">
+          <td> +15 <span style="color:grey">°C</span></td>
+          <td> +22 <span style="color:grey">°C</span></td>
+          <td> +13 <span style="color:grey">°C</span></td>
+          <td> +13 <span style="color:grey">°C</span></td>
+          <td> +15 <span style="color:grey">°C</span></td>
+          <td> +11 <span style="color:grey">°C</span> </td>
+          <td> +10 <span style="color:grey">°C</span></td>
+          <td> +14 <span style="color:grey">°C</span></td>
+          <td> +9 <span style="color:grey">°C</span></td>
+        </tr>
+        <tr class="table-other">
+          <td> Ch. of rain: 45%</td>
+          <td> Ch. of rain: 22%</td>
+          <td> Ch. of rain: 50%</td>
+          <td> Ch. of rain: 62%</td>
+          <td> Ch. of rain: 69%</td>
+          <td> Ch. of rain: 74%</td>
+          <td> Ch. of rain: 75%</td>
+          <td> Ch. of rain: 59%</td>
+          <td> Ch. of rain: 48%</td>
+        </tr>
+        <tr class="table-other">
+          <td> Humidity: 30% </td>
+          <td> Humidity: 16% </td>
+          <td> Humidity: 54% </td>
+          <td> Humidity: 60% </td>
+          <td> Humidity: 85% </td>
+          <td> Humidity: 89% </td>
+          <td> Humidity: 92% </td>
+          <td> Humidity: 74% </td>
+          <td> Humidity: 53% </td>
+        </tr>
+        <tr class="table-other">
+          <td> Wind: 7 m/s </td>
+          <td> Wind: 5 m/s </td>
+          <td> Wind: 3 m/s </td>
+          <td> Wind: 1 m/s </td>
+          <td> Wind: 2 m/s </td>
+          <td> Wind: 4 m/s </td>
+          <td> Wind: 3 m/s </td>
+          <td> Wind: 7 m/s </td>
+          <td> Wind: 11 m/s </td>
+        </tr>
+      </table>
+    </div>
+    </section>
+    <section class="meetings">
+      <h2 class="hmeeting"> Events </h2>
+      <div class="ulmeeting">
+      <p class="meet-time"> Today </p>
+      <ul>
+        <li> 8:00 Viso ploto palaistymas </li>
+        <li> 14:00 Išsausėjusios žemės palaistymas</li>
+        <li> 17:30 Viso ploto apipurškimas nuo kirminų </li>
+      </ul>
+      <p class="meet-time"> Tomorrow </p>
+      <ul>
+        <li> 8:00 Viso ploto palaistymas </li>
+        <li> 12:40 Trašų liejimas ant vaismedžių</li>
+        <li> 13:00 Trašų liejimas ant uogų </li>
+        <li> 13:40 Trašų liejimas ant gėlių</li>
+      </ul>
+      <p class="meet-time"> After tomorrow </p>
+      <ul>
+        <li> 15:00 Lauko patikra </li>
+      </ul>
+      <button class="plus">
+      </button>
+      <button class="minus">
+      </button>
+      </div>
+    </section>
+    <section class="todolist">
+      <h2 class="htodolist"> To do list</h2>
+      <div class="checktodolist">
+      <label class="todocheck">
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+        Nugriebti lapus
+      </label>
+      <br/>
+      <label class="todocheck">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Išrauti piktžoles
+      </label>
+      <br/>
+      <label class="todocheck">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Užpildyti baką vaismedžio trašomis
+      </label>
+      <br/>
+      <label class="todocheck">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+        Nurinkti derlių
+      </label>
+      <br/>
+      <button class="plus"></button> <button class="minus"> </button>
+    </div>
+    </section>
+    <section class="recom">
+      <h2 class="recom-h2"> Recommendations for today</h2>
+      <div class="star">
+      <svg height="100" width="100">
+       <polygon  class="twinkle-star" points="50,5 20,99 95,39 5,39 80,99" style="fill:yellow;"/>
+     </svg>
+   </div>
+     <p class="recom-p">
+       Nors šiandien rytą planuojamas trumpalaikis lietus, laistymo operacijos rekomenduojama neatšaukti, nes žemei reikia daugiau vandens nei planujama iškristi kritulių. </p>
+       <p class="recom-p">Nurinkti derlių rekomenduojama prieš apipurškimą nuo kirminų.</p>
+       <p class="recom-p">Galimos skruzdžių invazijos prie obels.</p>
+ </section>
+ <img src="./sodas.png" alt="sodas" class="img1">
+   </div>
+  </body>
+</html>

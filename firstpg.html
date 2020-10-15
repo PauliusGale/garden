@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title> javascript </title>
+	<script>
+	  function forma()
+	  {
+	         var name = document.getElementById('name').value;
+		       var surname = document.getElementById('surname').value;
+		       var yyyy = parseInt(document.getElementById('yyyy').value);
+		       var mm = parseInt(document.getElementById('mm').value);
+		       var dd = parseInt(document.getElementById('dd').value);
+           var currentTime = new Date();
+
+           var days=((currentTime.getFullYear()*365+(currentTime.getMonth() + 1)*30+currentTime.getDate())-(yyyy*365+mm*30+dd))/365;
+           if(days>=21){
+                 document.getElementById("result1").innerHTML = name;
+                 document.getElementById("result2").innerHTML = surname;
+               }
+          else alert("Jums dar nera 21 metai. Elkites atsakingai!");
+	  }
+    </script>
+  </head>
+   <body>
+
+    <p>Iveskite duomenis:</p>
+    <form action="nd.HTML" method="GET">
+    Vardas:
+    <input type="text" id="name"/><br/>
+  	Pavarde:
+	  <input type="text" id="surname"/><br/>
+	  Gimimo data: yyyy
+	  <input type="text" id="yyyy"/>
+	  mm
+	  <input type="text" id="mm"/>
+	  dd
+	  <input type="text" id="dd"/><br/>
+	  <button onclick="forma();" >Toliau</button><br/>
+    </form>
+
+  </body>
+ </html>
